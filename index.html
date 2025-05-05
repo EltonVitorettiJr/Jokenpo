@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jokenpô!</title>
+</head>
+
+<body>
+    <h1 class="title">rock, paper,<br>scissors</h1>
+    <main class="main-container">
+        <section class="score-container">
+            <div class="score">
+                <p class="subtitle-score">your score</p>
+                <h2 class="human-score">0</h2>
+            </div>
+            <div class="score">
+                <p class="subtitle-score">computer score</p>
+                <h2 class="computer-score">0</h2>
+            </div>
+        </section>
+        <h2 class="subtitle-winner">choose your option!</h2>
+        <section class="choose-container">
+            <div class="human-choose">
+                <img class="img-human-choose" src="assets/Rock.png" alt="people choose">
+            </div>
+            <h3 class="versus">vs</h3>
+            <div class="computer-choose">
+                <img class="img-computer-choose" src="assets/Rock.png" alt="computer choose">
+            </div>
+        </section>
+        <section class="options-container">
+            <div onclick="jokenpo('rock', computerChoose())" class="option-jokenpo">
+                <img src="assets/Rock.png" alt="rock image">
+            </div>
+            <div onclick="jokenpo('paper', computerChoose())" class="option-jokenpo">
+                <img src="assets/paper.png" alt="paper image">
+            </div>
+            <div onclick="jokenpo('scissors', computerChoose())" class="option-jokenpo">
+                <img src="assets/scissors.png" alt="scissors image">
+            </div>
+        </section>
+    </main>
+    <button onclick="resetScore()" class="button-reset">reset</button>
+</body>
+<script src="script.js"></script>
+
+</html>
